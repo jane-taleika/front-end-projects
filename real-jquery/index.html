@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Playground</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <aside>
+        <p>Add your own tab</p>
+        <a href="#" class="collapse" title="collapse">&#8656;</a>
+        <form name="newTab">
+            <div class="input-group">
+                <label for="text">Index</label>
+                <input type="text" id="text">
+            </div>
+            <div class="input-group">
+                <label for="title">Title</label>
+                <input type="text" id="title">
+            </div>
+            <div class="input-group">
+                <label for="html">HTML content</label>
+                <textarea id="html"></textarea>
+            </div>
+            <button id="add">ADD</button>
+        </form>
+    </aside>
+    <main>
+        <ul class="tabs">
+            <li class="tab" rel="tab0">One</li>
+            <li class="tab" rel="tab1">Two</li>
+            <li class="tab" rel="tab2">Three</li>
+            <li class="tab" rel="tab3">Four</li>
+        </ul>
+        <div class="container inactive" id="tab0">    default0    </div>
+        <div class="container inactive" id="tab1">    default1    </div>
+        <div class="container inactive" id="tab2">    default2    </div>
+        <div class="container inactive" id="tab3">    default3    </div>
+
+
+    </main>
+    <script>
+        $('input[type=button]').on('click', function(){
+            console.log('lol');
+            $('<a href="#" class="lol">LOL</a>').appendTo('.container');
+        });
+        $('body').on('click', '.lol', function(){
+            window.location.href='epam.by';
+        });
+    </script>
+    <script src="playground.js"></script>
+</body>
+</html>

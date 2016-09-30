@@ -1,0 +1,140 @@
+body {
+    background-color: rgb(244, 244, 244);
+}
+button {
+    width: 127px;
+    height: 48px;
+    float: left;
+    text-transform: uppercase;
+    border: none;
+    background-color: #fb6362;
+    color: #fff;
+    margin: 2px;
+    display: block;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.2), 0 1px 2px rgba(0,0,0,0.8);
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Gotham Book", sans-serif;
+    cursor: pointer;
+    -webkit-transition: background-color 0.2s;
+    -moz-transition: background-color 0.2s;
+    -ms-transition: background-color 0.2s;
+    -o-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+}
+aside {
+    width: 500px;
+    background-color: rgb(64, 74, 88);
+    color: white;
+    float: left;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+}
+aside p {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+aside .collapse {
+    float: right;
+    margin: -70px 0;
+    font-size: 55px;
+    text-decoration: none;
+    color: white;
+}
+aside form {
+    padding: 10px 20px;
+}
+aside .input-group {
+    margin: 10px 0;
+}
+aside label {
+    display: inline-block;
+    width: 109px;
+    text-align: right;
+    margin-right: 15px;
+}
+aside label[for=html] {
+    vertical-align: top;
+}
+aside input,
+aside textarea {
+    color: rgb(153, 153, 153);;
+    padding: 5px 10px;
+    outline: 0;
+    border-color: transparent;
+    border-radius: 4px;
+    width: 280px;
+}
+aside textarea {
+    height: 150px;
+}
+aside button {
+    width: 302px;
+    float: right;
+    margin-right: 30px;
+}
+main {
+    margin-left: 500px;
+    padding: 0 40px;
+}
+main .tabs {
+    margin-top: 57px;
+    margin-bottom: 0;
+    padding-left: 0;
+    position: relative;
+    left: 3px;
+    top: 2px;
+}
+main .tab {
+    display: inline-block;
+    position: relative;
+    color: #ffffff;
+    width: 95px;
+    line-height: 1.7;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+main .tab:before {
+    content: "";
+    position: absolute;
+    left: -3px;
+    top: -2px;
+    z-index: -1;
+    border-bottom: 41px solid rgb(64, 74, 88);
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    height: 0;
+    width: 67px;
+}
+main .tab:first-child {
+    left: 0;
+}
+main .tab:nth-child(2) {
+    left: -20px;
+}
+main .tab:nth-child(3) {
+    left: -40px;
+}
+main .tab:nth-child(4) {
+    left: -60px;
+}
+main .tab:nth-child(5) {
+    left: -80px;
+}
+main .container {
+    background-color: white;
+    border: 2px solid rgb(64, 74, 88);
+    border-radius: 4px;
+    height: 200px;
+}
+.active{
+  background-color: yellow;
+}
+.inactive{
+  display:none;
+}
