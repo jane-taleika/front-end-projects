@@ -1,0 +1,92 @@
+header{
+  width: 100%;
+	height: 60px;
+
+	text-align: center;
+
+	color: #FFFACD;
+	background-color:  #8B795E;
+
+  font-size:1.6em;
+}
+ header:before{
+   display: inline-block;
+ 	visibility: hidden;
+
+ 	height: 100%;
+
+ 	content: "";
+ 	vertical-align: middle;
+ }
+
+
+.footer{
+  clear: left;
+
+  width:100%;
+  height: 30px;
+
+  text-align: right;
+
+  color:#fff;
+  background-color: #8cc63f;
+
+}
+ footer:before{
+   display: inline-block;
+   visibility: hidden;
+
+   height: 100%;
+
+   content: "";
+   vertical-align: middle;
+ }
+
+.content{
+  width:1000px;
+  margin: 0 auto;
+
+  background-image: url(../img/content_background.png);
+  background-repeat: repeat-y;
+
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1em;
+
+}
+
+.navigation{
+  	position: relative;
+
+  	float: left;
+
+    box-sizing: border-box;
+  	width: 200px;
+  	padding: 15px;
+
+    text-decoration: underline;
+
+}
+
+
+.lyrics{
+	float: left;
+
+  box-sizing: border-box;
+	width: 600px;
+	padding: 20px;
+
+
+}
+
+.albums{
+  	float: right;
+
+    box-sizing: border-box;
+  	width: 200px;
+  	padding: 15px;
+
+
+}
+
+article h3, p {text-align: center;}
+nav a {text-decoration: underline; color:black;}
