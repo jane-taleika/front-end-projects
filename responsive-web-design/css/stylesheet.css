@@ -1,0 +1,47 @@
+/*два переломных - смена layout и картинки
+для контактов иконочный шрифтик и можно другие иконки
+off-canvas для (меню). самый простой - это чекбокс
+бутерброд. как словить? (отработка нажатия без js) лейбл(чекбокс)
+
+доп задание - все в одном контейнере и в таком порядке
+
+последний хром и последний фаерфокс, беспрефиксный флексбокс
+
+полноценное использование макета
+
+для mediaqauery min-width max-width и всеее
+
+заменить index на RWD для доступа к лекции по основной ссылке
+
+делать по ТЗ а не по макету ( к заданию на 23е)*/
+
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #e7e3d4;
+}
+.title{
+  width:100%;
+  background-color: #ccc8ba;
+}
+.navigation{
+  width:20%;
+  background-color:#ebe9e3;
+}
+
+.article{
+width:60%;
+height:600px;
+}
+
+.aside{
+
+width:20%;
+background-color:#ebe9e3;
+}
+
+.footer{
+    background-color: #ccc8ba;
+width:100%;
+}
