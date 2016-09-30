@@ -1,0 +1,39 @@
+@font-face {
+    font-family: Bebas;
+    src: url(./font/Bebas.ttf);
+  }
+  @font-face{
+    font-family: CenturyGothicRegular;
+    src: url(./font/CenturyGothicRegular.ttf);
+  }
+  @font-face {
+
+    font-family: CicleFina;
+    src: url(./font/Cicle_Fina.ttf);
+  }
+  @font-face {
+    font-family: CicleFina Italic;
+    src: url(./font/Cicle_Fina_Italic.ttf);
+  }
+  @font-face {
+    font-family: Colab Regular;
+    src: url(./font/ColabReg.ttf);
+  }
+  @font-face {
+    font-family: Colab Thin;
+    src: url(./font/ColabThi.ttf);
+  }
+  @font-face {
+    font-family: HelveticaLT UltraCompressed;
+    src: url(./font/Helvetica-UltraCompressed.otf);
+  }
+  @font-face {
+    font-family: SourceSansPro Bold;
+    src: url(font/SourceSansProBold.ttf);
+  }
+  @font-face {
+    font-family: SourceSansPro Light;
+    src: url(font/SourceSansProLight.ttf);
+
+
+}
