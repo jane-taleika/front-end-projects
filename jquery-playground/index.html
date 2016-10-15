@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Playground</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="jquery-ui.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <aside>
+        <p>Add your own tab</p>
+        <a href="#" class="collapse" title="collapse">&#8656;</a>
+        <form name="newTab">
+            <div class="input-group">
+                <label for="text">Index</label>
+                <input type="text" id="text">
+            </div>
+            <div class="input-group">
+                <label for="title">Title</label>
+                <input type="text" id="title">
+            </div>
+            <div class="input-group">
+              <label for="image">Image</label>
+              <input type="file" id="img">
+            </div>
+            <div class="input-group">
+                <label for="html">HTML content</label>
+                <textarea id="html"></textarea>
+            </div>
+            <div class="input-group">
+                <label for="datepicker">Date:</label>
+
+                <input type="text" id="datepicker" placeholder="5/26/2016">
+            </div>
+            <button id="add">ADD</button>
+            <button id="edit">EDIT</button>
+            <button id="res">RESET</button>
+
+        </form>
+    </aside>
+    <main>
+      <a href="#" class="left arrow" title="collapse">&#8656;</a>
+      <a href="#" class="right arrow" title="collapse">&#8658;</a>
+      <div class="img-container">
+        <div class="tab-image active" data-id="0"><img src="img/kitty_0.png"> </div>
+        <div class="tab-image inactive" data-id="1"><img src="img/kitty_1.png"> </div>
+        <div class="tab-image inactive" data-id="2"><img src="img/kitty_2.png"> </div>
+        <div class="tab-image inactive" data-id="3"><img src="img/kitty_3.png"> </div>
+      </div>
+
+        <ul class="tabs">
+            <li class="tab current-tab" tab-id="0" tab-date="">One</li>
+            <li class="tab" tab-id="1" tab-date="">Two</li>
+            <li class="tab" tab-id="2" tab-date="">Three</li>
+            <li class="tab" tab-id="3" tab-date="">Four</li>
+        </ul>
+        <div class="hidden-container">
+        <div class="container active" data-id="0"><p> default 0</p></div>
+        <div class="container inactive"data-id="1" ><p> default 1</p></div>
+        <div class="container inactive"data-id="2" ><p> default 2</p></div>
+        <div class="container inactive" data-id="3"><p> default 3</p></div>
+      </div>
+      <div class="date ></div>
+      <div class="hidden-img-container inactive" id="myImg"> </div>
+    </main>
+    <script src="jquery-ui.min.js"></script>
+    <script>
+          $( "#datepicker" ).datepicker({
+          minDate: "0"
+      });
+    </script>  <div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div>
+    <script src="playground.js"></script>
+</body>
+</html>
